@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mimi's Squishies</title><meta name="theme-color" content="#9ce8d3">
+<link rel="stylesheet" href="style.css"><script id="squareSdk"></script></head>
+<body>
+<div id="toast"></div>
+<header><a class="logo" href="#">Mimi's <span>Squishies</span></a><nav><button onclick="filterProducts('all')">Shop</button><button onclick="filterProducts('squishy')">Squishies</button><button onclick="filterProducts('other')">Others</button><button onclick="openAdmin()">Owner</button></nav><button class="cartBtn" onclick="toggleCart()">🛍️ <b id="cartCount">0</b></button></header>
+<section class="hero"><div><div class="pill">✨ SQUISH • FIDGET • SMILE</div><h1>Tiny things.<br><em>Big happy.</em></h1><p>Cute finds, squishies and more from Mimi’s in St. Croix.</p><button class="primary" onclick="document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">Shop the drop →</button></div><div class="blob"><div class="face">◕‿◕</div><span>NEW<br>DROP!</span></div></section>
+<div class="ticker">♡ CUTE FINDS　✦　NEW DROPS　♡　MIMI'S SQUISHIES　✦　SQUISHY GOODNESS　♡</div>
+<main id="shop"><div class="shopHead"><div><small>THE GOOD STUFF</small><h2>Pick your favorite</h2></div>
+    <div class="shopTools"><div class="searchBox"><span>⌕</span><input id="productSearch" type="search" placeholder="Search products..." oninput="searchProducts(this.value)" aria-label="Search products"></div>
+    <div class="filters"><button class="active" onclick="filterProducts('all',this)">All</button><button onclick="filterProducts('squishy',this)">Squishies</button><button onclick="filterProducts('other',this)">Others</button></div></div></div><div id="products" class="grid"></div></main>
+<aside id="cart" class="drawer"><div class="drawerHead"><h2>Your bag ♡</h2><button onclick="toggleCart()">✕</button></div><div id="cartItems"></div><div class="cartFoot"><div class="total"><span>Total</span><b id="cartTotal">$0.00</b></div><button class="primary full" onclick="openCheckout()">Checkout →</button><small>Secure checkout powered by Square</small></div></aside><div id="shade" class="shade" onclick="toggleCart(false)"></div>
+<div id="modal" class="modalWrap"><div class="modal"><button class="x" onclick="closeModal()">✕</button><div id="modalBody"></div></div></div>
+<section class="contactStrip"><div><small>NEED ANYTHING?</small><h2>We’re happy to help.</h2><p>Mimi’s Squishies • St. Croix, U.S. Virgin Islands</p></div><a href="tel:+13402083944">340-208-3944</a></section>
+<footer><b>Mimi's Squishies</b><span>St. Croix • <a href="tel:+13402083944">340-208-3944</a></span></footer>
+<script src="app.js"></script></body></html>
