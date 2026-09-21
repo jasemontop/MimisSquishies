@@ -1,0 +1,10 @@
+# Render
+DATABASE_URL=
+ADMIN_PASSWORD=Jasemmariam93
+
+# Square: begin with sandbox
+SQUARE_ENV=sandbox
+SQUARE_APP_ID=
+SQUARE_LOCATION_ID=
+SQUARE_ACCESS_TOKEN=
+PORT=3000
